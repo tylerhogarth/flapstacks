@@ -1,0 +1,27 @@
+{
+  "name": "flapstacks",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "sh scripts/build.sh",
+    "typecheck": "tsc -p tsconfig.json",
+    "start": "bun dist/server.mjs",
+    "deploy": "prisma deploy module.ts --name Flapstacks"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.10.1",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.10.1",
+  "type": "module",
+  "devDependencies": {
+    "@prisma/composer": "^0.29.1",
+    "@prisma/composer-prisma-cloud": "^0.29.1",
+    "@types/bun": "^1.4.2",
+    "prisma": "8.0.0-rc.22",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}

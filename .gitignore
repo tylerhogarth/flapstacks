@@ -1,2 +1,8 @@
 .venv/
 .DS_Store
+node_modules/
+dist/
+.prisma/
+.prisma-composer/
+deploy-report.json
+.alchemy/
