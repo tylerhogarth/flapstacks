@@ -6,3 +6,4 @@ dist/
 .prisma-composer/
 deploy-report.json
 .alchemy/
+.claude/skills/
